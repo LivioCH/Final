@@ -6,7 +6,7 @@ let packageData = {
             original: 1000,
             price: 719,
             description: "Happy New Year",
-            image: "/img/deal1.png",
+            image: "../img/deal1.png",
             category: "package"
         },
         {
@@ -15,7 +15,7 @@ let packageData = {
             original: 1500,
             price: 1288,
             description: "Merry Christmas",
-            image: "/img/deal2.png",
+            image: "../img/deal2.png",
             category: "package"
         },
         {
@@ -24,7 +24,7 @@ let packageData = {
             original: 354,
             price: 222,
             description: "A lot of fun and joy",
-            image: "/img/deal3.png",
+            image: "../img/deal3.png",
             category: "package"
         }
     ]

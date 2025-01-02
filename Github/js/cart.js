@@ -4,7 +4,7 @@ let cartData = {
             name: "Margherita Pizza",
             price: 300,
             quantity: 1,
-            image: "/img/pizza1.jpg"
+            image: "../img/pizza1.jpg"
         }
     ],
     getSubtotal() {
