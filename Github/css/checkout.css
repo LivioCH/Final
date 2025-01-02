@@ -1,0 +1,133 @@
+body {
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 100%;
+}
+
+* {box-sizing: border-box;}
+
+.bg-img {
+  /* klo mo ganti gambar disini yak*/
+  background-image: url(/img/prosciutto-pizza.jpg);
+  min-height: 380px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+}
+
+/* posisi navbar di gambar */
+.container {
+  position: absolute;
+  width: auto;
+
+}
+
+/* navbarnya */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* link navbar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+/*animasi navbar*/
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/*ini jujur gw liat mbah gugel aja ikutin*/
+.row {
+    margin-top: 150px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+/*col col juga*/
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+/*awalnya ini buat cart nya tapi gw g suka jadi samain ama container yg satunya*/
+.container1 {
+  background-color: #fff3e0;
+  padding: 5px 20px 15px 20px;
+  border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container1 {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+/*ini buat continue to checkout*/
+.btn1 {
+  background-color: #dd640e;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <nav class="nav large">
+        <div class="nav-logo">
+            <img src="/img/Brand.png" alt="">
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="/html/index.html" class="link">Home</a></li>
+                <li><a href="/html/about_contact.html" class="link">About</a></li>
+                <li><a href="/html/menu.html" class="link">Menu</a></li>
+                <li><a href="/html/about_contact.html#contact-section" class="link">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="nav-button">
+            <button class="cart">
+                <img class="imglogo" src="../img/cart1.png" alt="Cart">
+            </button>
+            <a href="/html/login.html">
+                <button class="btn white-btn">
+                    <img class="imglogo" src="../img/Login.png" alt="">Login
+                </button>
+            </a>
+        </div>
+    </nav>
+    <section class="type large">
+        <div class="type-buttons">
+            <button class="type-btn active" data-filter="all">ALL</button>
+            <button class="type-btn" data-filter="burger">BURGERS</button>
+            <button class="type-btn" data-filter="pizza">PIZZAS</button>
+            <button class="type-btn" data-filter="drink">DRINKS</button>
+            <button class="type-btn" data-filter="pasta">PASTA</button>
+            <button class="type-btn" data-filter="desert">DESSERTS</button>
+        </div>
+    </section>
+    <section class="menu-section">
+        <div class="menu-grid">
+            <div class="menu-card" data-category="pizza">
+                <a href="detail.html?id=pizza-margherita"><img src="/img/pizza1.jpg" alt="pizza" class="menu-img"></a>
+                <div class="menu-content">
+                    <h3>Margherita Pizza</h3>
+                    <p class="description">Fresh tomatoes, mozzarella, basil, and olive oil</p>
+                    <p class="price">$300</p>
+                    <button class="order-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="pizza">
+                <a href="detail.html?id=pepperoni-pizza"><img src="/img/pizza2.jpg" alt="pizza" class="menu-img"></a>
+                <div class="menu-content">
+                    <h3>Pepperoni Pizza</h3>
+                    <p class="description">Classic pepperoni with mozzarella and tomato sauce</p>
+                    <p class="price">$270</p>
+                    <button class="order-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="pizza">
+                <a href="detail.html?id=hawaiian-pizza"><img src="/img/pizza3.jpg" alt="pizza" class="menu-img"></a>
+                <div class="menu-content">
+                    <h3>Hawaiian Pizza</h3>
+                    <p class="description">Ham, pineapple, mozzarella, and tomato sauce</p>
+                    <p class="price">$290</p>
+                    <button class="order-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="burger">
+                <a href="detail.html?id=burger"><img src="/img/burger.jpg" alt="burger" class="menu-img"></a>
+                <div class="menu-content">
+                    <h3>Burger</h3>
+                    <p class="description">a burger with cheese, mozzarella, and tomato sauce inside</p>
+                    <p class="price">$75</p>
+                    <button class="order-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="drink">
+                <a href="detail.html?id=milk-tea">
+                    <img src="/img/MilkTea.jpg" alt="drink" class="menu-img">
+                </a>
+                <div class="menu-content">
+                    <h3>Milk Tea</h3>
+                    <p class="description">a milk tea with a lot of sugar</p>
+                    <p class="price">$55</p>
+                    <button class="order-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="pasta">
+                <a href="detail.html?id=bolognese"><img src="/img/bolognese.png" alt="pasta" class="menu-img"></a>
+                <div class="menu-content">
+                    <h3>Bolognese</h3>
+                    <p class="description">a bolognese with a lot of meat</p>
+                    <p class="price">$150</p>
+                    <button class="order-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="menu-card" data-category="desert">
+                <a href="detail.html?id=tiramisu">
+                    <img src="/img/tiramisu.jpg" alt="desert" class="menu-img">
+                </a>
+                <div class="menu-content">
+                    <h3>Tiramisu</h3>
+                    <p class="description">a tiramisu with a pizza shape</p>
+                    <p class="price">$80</p>
+                    <button class="order-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer
+        <p>&copy; 2024 pizza.id. All rights reserved.</p>
+    </footer>
+    <script src="/js/detail.js"></script>
+    <script src="/js/nav.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html>

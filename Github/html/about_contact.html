@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/about_contact.css">
+</head>
+<body>
+    <nav class="nav large">
+        <div class="nav-logo">
+            <img src="../img/Brand.png" alt="">
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="../html/index.html" class="link">Home</a></li>
+                <li><a href="../html/about_contact.html" class="link">About</a></li>
+                <li><a href="../html/menu.html" class="link">Menu</a></li>
+                <li><a href="../html/about_contact.html#contact-section" class="link">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="nav-button">
+            <button class="cart">
+                <img class="imglogo" src="../img/cart1.png" alt="Cart">
+            </button>
+            <a href="../html/login.html">
+                <button class="btn white-btn">
+                    <img class="imglogo" src="../img/Login.png" alt="">Login
+                </button>
+            </a>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <section class="about">
+            <h1>ABOUT US</h1>
+            <center>
+                    Welcome to Pizza ID, where pizza isn't just a meal - it's an experience! 
+                    <br>
+                    Whether you're dining in with family or grabbing a quick slice on the go, 
+                    we're here to serve up smiles one pizza at a time.
+            </center>
+        </section>
+
+        <section class="special">
+            <h1>MEMBERS</h1>
+            <div class="special-items">
+                <div class="special-item">
+                    <img src="../img/livio.JPG" alt="livio">
+                    <div class="info">
+                        <h2>李星漢 Livio</h2>
+                        <h3>working on the :</h3>
+                        <p> Index Page</p>
+                        <p> Menu Page</p>
+                        <p> Detail Page</p>
+                        <p> Package Page</p>
+                        <p> Home Page</p>
+                        <p> Navigation Bar</p>
+                    </div>
+                </div>
+                <div class="special-item">
+                    <img src="../img/dustin.JPG" alt="dustin">
+                    <div class="info">
+                        <h2>郭榮定 Dustin</h2>
+                        <h3>working on the :</h3>
+                        <p> Shopping Page</p>
+                        <p> Checkout Page</p>
+                    </div>
+                </div>
+                <div class="special-item">
+                    <img src="../img/fredella.jpeg" alt="fredella">
+                    <div class="info">
+                        <h2>徐女婷 fredella</h2>
+                        <h3>working on the :</h3>
+                        <p> About Us Page</p>
+                        <p> Contact Us Page</p>
+                        <p> Login Page</p>
+                        <p> Navigation Bar</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact-section" id="contact-section">
+            <div class="contact-details">
+                <h2>CONTACT DETAILS</h2>
+                <p>If you have any questions or inquiries, feel free to reach out to us. We’re here to help!</p>
+                <div class="detail-row">
+                    <strong>Address:</strong> Pizzeria Street, No. 123, Jakarta, Indonesia.
+                </div>
+                <div class="detail-row">
+                    <strong>Phone:</strong> +62 812 3456 7890
+                </div>
+                <div class="detail-row">
+                    <strong>Email:</strong> info@pizza.id
+                </div>
+                <div class="detail-row">
+                    <strong>Hours:</strong> Monday – Friday: 10 am – 10 pm<br>Weekend: 11 am – 9 pm
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>CONTACT US</h2>
+                <form action="#" method="post">
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 pizza.id. All rights reserved.</p>
+    </footer>
+    <script src="../js/nav.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+</html>
