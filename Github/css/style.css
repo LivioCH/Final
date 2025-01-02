@@ -140,7 +140,7 @@ body {
 }
 
 .btn.btn.white-btn:hover img{
-    content: url('/img/login1.png')
+    content: url('../img/login1.png')
 }
 
 .cart {
