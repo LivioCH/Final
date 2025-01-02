@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f5f5f5; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y: auto;
+}
+
+.imglogo {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+}
+
+
+
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+    z-index: 100;
+}
+
+.nav.large {
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.large .nav-logo img{
+    position: relative;
+    right: 80px;
+    width: 150px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.small .nav-logo img{
+    position: relative;
+    right: 80px;
+    width: 70px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav.small {
+    height: 60px;
+    line-height: 60px;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+    position: relative;
+}
+
+.link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid #fff;
+    transition: width 0.3s ease-in-out;
+}
+
+.link:hover::before,.active::before {
+    width: 100%;
+}
+
+.nav-button{
+    display: flex;
+    align-items: center;
+}
+
+.nav-button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-button .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+    gap: 5px;  
+}
+
+.btn:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+#registerBtn{
+    margin-left: 15px;
+}
+.btn.white-btn{
+    background: #ffb703;
+    color: black;
+    border: 2px solid #ffb703;
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.btn.btn.white-btn:hover{
+    background-color: transparent;
+    color: #ffb703;
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn.btn.white-btn:hover img{
+    content: url('/img/login1.png')
+}
+
+.cart {
+    position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.cart img {
+    width: 60px;
+    height: 60px;
+}
+
+.cart-popup {
+    position: absolute;
+    top: 60px;
+    right: -50px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    min-width: 300px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.cart:hover .cart-popup {
+    opacity: 1;
+    visibility: visible;
+}
+
+.cart-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-name {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.remove-item {
+    cursor: pointer;
+    color: #999;
+    padding: 0 5px;
+}
+
+.remove-item:hover {
+    color: #333;
+}
+
+.cart-item-price {
+    display: flex;
+    justify-content: space-between;
+    color: #ffb703;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.cart-item-qty {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.cart-subtotal {
+    margin: 15px 0;
+    font-weight: 500;
+    color: #333;
+    text-align: right;
+}
+
+.cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cart-btn,
+.checkout-btn {
+    padding: 8px 20px;
+    background: #ffb703;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.cart-btn:hover,
+.checkout-btn:hover {
+    background: #e6a502;
+    transform: translateY(-2px);
+}
+
+.cart::after {
+    content: none;
+}
+
+.nav-menu-btn{
+    display: none;
+}
+.form-box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 512px;
+    height: 420px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.hot-package img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}   
+
+.backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: orange;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+  
+.backToTop:hover {
+    background-color: orange;
+}
+
+footer {
+    background-color: orange;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media only screen and (max-width: 786px){
+    .nav-button{
+        display: none;
+    }
+    .nav-menu.responsive{
+        top: 100px;
+    }
+    .nav-menu{
+        position: absolute;
+        top: -800px;
+        display: flex;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.2);
+        width: 100%;
+        height: 90vh;
+        backdrop-filter: blur(20px);
+        transition: .3s;
+    }
+    .nav-menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-menu-btn{
+        display: block;
+    }
+    .nav-menu-btn i{
+        font-size: 25px;
+        color: #fff;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .nav-menu-btn i:hover{
+        background: rgba(255, 255, 255, 0.15);
+    }
+}
+
+@media (max-width: 768px) {
+    .cart-popup {
+        right: -100px;
+        min-width: 280px;
+    }
+}
