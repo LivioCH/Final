@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 Cart Subtotal: $${cartData.getSubtotal()}
             </div>
             <div class="cart-buttons">
-                <a href="/html/cart.html"><button class="cart-btn">CART</button></a>
-                <a href="/html/checkout.html"><button class="checkout-btn">CHECKOUT</button></a>
+                <a href="../html/cart.html"><button class="cart-btn">CART</button></a>
+                <a href="../html/checkout.html"><button class="checkout-btn">CHECKOUT</button></a>
             </div>
         `;  
     }
