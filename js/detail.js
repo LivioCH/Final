@@ -5,7 +5,7 @@ let foodData = {
             name: "Margherita Pizza",
             price: 300,
             description: "Fresh tomatoes, mozzarella, basil, and olive oil",
-            image: "/img/pizza1.jpg",
+            image: "../img/pizza1.jpg",
             category: "pizza"
         },
         {
@@ -13,7 +13,7 @@ let foodData = {
             name: "Pepperoni Pizza",
             price: 270,
             description: "Classic pepperoni with mozzarella and tomato sauce",
-            image: "/img/pizza2.jpeg",
+            image: "../img/pizza2.jpeg",
             category: "pizza"
         },
         {
@@ -21,7 +21,7 @@ let foodData = {
             name: "Hawaiian Pizza",
             price: 290,
             description: "Ham, pineapple, mozzarella, and tomato sauce",
-            image: "/img/pizza3.jpg",
+            image: "../img/pizza3.jpg",
             category: "pizza"
         },
         {
@@ -29,7 +29,7 @@ let foodData = {
             name: "Burger",
             price: 75,
             description: "a burger with cheese, mozzarella, and tomato sauce inside",
-            image: "/img/burger.jpg",
+            image: "../img/burger.jpg",
             category: "burger"
         },
         {
@@ -37,7 +37,7 @@ let foodData = {
             name: "Milk Tea",
             price: 55,
             description: "a milk tea with a lot of sugar",
-            image: "/img/MilkTea.jpg",
+            image: "../img/MilkTea.jpg",
             category: "drink"
         },
         {
@@ -45,7 +45,7 @@ let foodData = {
             name: "Bolognese",
             price: 150,
             description: "a bolognese with a lot of meat",
-            image: "/img/bolognese.png",
+            image: "../img/bolognese.png",
             category: "pasta"
         },
         {
@@ -53,7 +53,7 @@ let foodData = {
             name: "Tiramisu",
             price: 80,
             description: "a tiramisu with a pizza shape",
-            image: "/img/tiramisu.jpg",
+            image: "../img/tiramisu.jpg",
             category: "desert"
         }
     ]
