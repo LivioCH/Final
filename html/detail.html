@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/detail.css">
+</head>
+<body>
+    <nav class="nav large">
+        <div class="nav-logo">
+            <img src="../img/Brand.png" alt="">
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="../html/index.html" class="link">Home</a></li>
+                <li><a href="../html/about_contact.html" class="link">About</a></li>
+                <li><a href="../html/menu.html" class="link">Menu</a></li>
+                <li><a href="../html/about_contact.html#contact-section" class="link">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="nav-button">
+            <button class="cart">
+                <img class="imglogo" src="../img/cart1.png" alt="Cart">
+            </button>
+            <a href="../html/login.html">
+                <button class="btn white-btn">
+                    <img class="imglogo" src="../img/Login.png" alt="">Login
+                </button>
+            </a>
+        </div>
+    </nav>
+
+    <section class="product-detail">
+        <div class="product-container">
+            <div class="product-image">
+                <img src="" alt="Product Image">
+            </div>
+            
+            <div class="product-info">
+                <h1></h1>
+                <div class="price"></div>
+                <div class="description">
+                    <p></p>
+                </div>
+
+                <div class="options">
+                    <h3>CHOOSE YOUR CRUST</h3>
+                    <div class="crust-options">
+                        <button class="option-btn active">Sausage</button>
+                        <button class="option-btn">Cheese</button>
+                        <button class="option-btn">Classic Hand Tossed</button>
+                    </div>
+
+                    <h3>SIZE</h3>
+                    <div class="size-options">
+                        <button class="option-btn active">Medium</button>
+                        <button class="option-btn">Large</button>
+                        <button class="option-btn">Regular</button>
+                    </div>
+                </div>
+
+                <div class="add-to-cart">
+                    <div class="quantity">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" readonly>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-cart-btn">
+                        <i class='bx bx-cart-alt'></i>
+                        ADD TO CART
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="review-section">
+        <h2>Leave a Review</h2>
+        <form action="#" method="post" class="review-form">
+            <div class="rating">
+                <span>Rate this product:</span>
+                <div class="stars">
+                    <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star">&#9733;</label>
+                    <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars">&#9733;</label>
+                    <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars">&#9733;</label>
+                    <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars">&#9733;</label>
+                    <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="5 stars">&#9733;</label>
+                </div>
+            </div>
+            <div class="form-row">
+                <label for="comment">Your Comment:</label>
+                <textarea id="comment" name="comment" rows="4" placeholder="Write your review here..." required></textarea>
+            </div>
+            <button type="submit" class="submit-review-btn">Submit Review</button>
+        </form>
+    </section>
+
+    <section class="reviews-display">
+        <div class="container overall-container">
+            <!-- ... existing reviews content ... -->
+        </div>
+
+        <div class="see-all-reviews">
+            <a href="../html/reviews.html" class="see-reviews-btn">See All Reviews</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 pizza.id. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/detail.js"></script>
+    <script src="../js/cart.js"></script>
+</body>
+</html>
