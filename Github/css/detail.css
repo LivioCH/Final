@@ -244,16 +244,6 @@
     background: #e6a502;
 }
 
-@media (max-width: 768px) {
-    .product-container {
-        grid-template-columns: 1fr;
-    }
-    
-    .product-info h1 {
-        font-size: 2em;
-    }
-}
-
 .see-all-reviews {
     text-align: center;
     margin: 30px 0;
@@ -272,4 +262,14 @@
 
 .see-reviews-btn:hover {
     background-color: #d64d1b;
+}
+
+@media (max-width: 768px) {
+    .product-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .product-info h1 {
+        font-size: 2em;
+    }
 }
