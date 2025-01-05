@@ -4,12 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Member Information</title>
-    <link rel="stylesheet" href="member.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/member.css">
 </head>
 <body>
-    <br><br>
-    <div class="member-container">
-        <h1>Member Information</h1>
+    <nav class="nav large">
+        <div class="nav-logo">
+            <img src="../img/Brand.png" alt="">
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="../html/index.html" class="link">Home</a></li>
+                <li><a href="../html/about_contact.html" class="link">About</a></li>
+                <li><a href="../html/menu.html" class="link">Menu</a></li>
+                <li><a href="../html/about_contact.html#contact-section" class="link">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="nav-button">
+            <button class="cart">
+                <img class="imglogo" src="../img/cart1.png" alt="Cart">
+            </button>
+            <a href="../html/login.html">
+                <button class="btn white-btn">
+                    <img class="imglogo" src="../img/Login.png" alt="">Login
+                </button>
+            </a>
+        </div>
+    </nav>
+
+    <div class="member-container" style="margin-top: 120px;">
+        <h1>Account Information</h1>
 
         <section class="personal-info">
             <h2>Personal Information</h2>
@@ -112,5 +138,8 @@
         </section>
     </div>
     <br><br>
+
+    <script src="../js/nav.js"></script>
+    <script src="../js/cart.js"></script>
 </body>
 </html>

@@ -160,6 +160,86 @@
     transition: background 0.3s ease;
 }
 
+
+.review-section {
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-section h2 {
+    text-align: center;
+    color: #f15b22;
+    margin-bottom: 20px;
+}
+
+.review-form .rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.review-form .stars {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+    margin-left: 10px;
+}
+
+.review-form .stars input {
+    display: none;
+}
+
+.review-form .stars label {
+    font-size: 24px;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.review-form .stars input:checked ~ label,
+.review-form .stars label:hover,
+.review-form .stars label:hover ~ label {
+    color: #ffb703;
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-row textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+    resize: none;
+}
+
+.submit-review-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #ffb703;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.submit-review-btn:hover {
+    background: #e6a502;
+}
 .add-cart-btn:hover {
     background: #e6a502;
 }
@@ -172,4 +252,24 @@
     .product-info h1 {
         font-size: 2em;
     }
+}
+
+.see-all-reviews {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.see-reviews-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #f15b22;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.see-reviews-btn:hover {
+    background-color: #d64d1b;
 }
