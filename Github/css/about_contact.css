@@ -37,9 +37,10 @@ h1, h2 {
 
 .special-item {
     position: relative;
-    width: 300px;
-    height: 300px;
     cursor: pointer;
+    width: 24%;
+    height: auto;
+    aspect-ratio: 1;
 }
 
 .special-item img {
@@ -82,11 +83,12 @@ h1, h2 {
 
 .special-items {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 20px;
     justify-content: center;
     margin-top: 20px;
 }
+
 
 .contact-section {
     display: flex;
