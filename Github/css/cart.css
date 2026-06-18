@@ -1,5 +1,20 @@
-body {font-family: Arial, Helvetica, sans-serif}
-* {box-sizing: border-box;}
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.nav.large {
+    height: 60px;
+    line-height: 60px;
+}
+
+.nav.large .nav-logo img {
+    width: 70px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 table {
     margin-top: 100px;
     width: 100%;
@@ -7,11 +22,14 @@ table {
     margin-bottom: 20px;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid #ddd;
 }
 
-th, td {
+th,
+td {
     padding: 10px;
     text-align: center;
 }
@@ -40,7 +58,7 @@ th {
     transition: all 0.3s ease;
 }
 
-.button{
+.button {
     background-color: orange;
     color: white;
     border: none;
@@ -49,7 +67,7 @@ th {
     text-transform: uppercase;
 }
 
-.button:hover{
+.button:hover {
     background: #e6a502;
     transform: translateY(-2px);
 }
