@@ -59,7 +59,7 @@ let foodData = {
     ]
 };
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const urlParams = new URLSearchParams(window.location.search);
     const productId = urlParams.get('id');
 
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const crustSection = document.querySelector('.options h3:first-child');
         const crustOptions = document.querySelector('.crust-options');
-        
+
         if (product.category !== 'pizza') {
             crustSection.style.display = 'none';
             crustOptions.style.display = 'none';
@@ -112,4 +112,12 @@ document.addEventListener('DOMContentLoaded', function() {
             button.classList.add('active');
         });
     });
+    const reviewForm = document.querySelector('.review-form');
+    if (reviewForm) {
+        reviewForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Review submitted successfully! Thank you for your feedback.');
+            reviewForm.reset();
+        });
+    }
 });

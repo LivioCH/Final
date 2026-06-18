@@ -29,7 +29,7 @@ slider.addEventListener('mousemove', (e) => {
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
     const walk = (x - startX) * 2;
-    
+
     if (Math.abs(walk) > 100) {
         if (walk > 0) {
             prevSlide();
@@ -81,5 +81,18 @@ function nextSlide() {
     showSlide(currentIndex + 1);
 }
 
-// Initial setup
+let autoSlideInterval = setInterval(() => {
+    nextSlide();
+}, 3000);
+
+slider.addEventListener('mouseenter', () => {
+    clearInterval(autoSlideInterval);
+});
+
+slider.addEventListener('mouseleave', () => {
+    autoSlideInterval = setInterval(() => {
+        nextSlide();
+    }, 3000);
+});
+
 showSlide(currentIndex);
