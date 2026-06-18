@@ -17,7 +17,9 @@ body {
     flex: 1;
 }
 
-.about, .contact, .special-items {
+.about,
+.contact,
+.special-items {
     background: #fff3e0;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -26,13 +28,14 @@ body {
     font-size: 20px;
 }
 
-h1, h2 {
+h1,
+h2 {
     color: black;
     text-align: center;
 }
 
-.info h2{
-    color: white;   
+.info h2 {
+    color: white;
 }
 
 .special-item {
@@ -88,7 +91,6 @@ h1, h2 {
     justify-content: center;
     margin-top: 20px;
 }
-
 
 .contact-section {
     display: flex;
@@ -152,7 +154,8 @@ h1, h2 {
     color: #333;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -177,34 +180,35 @@ h1, h2 {
 }
 
 @media (max-width: 768px) {
-.contact-section {
-    flex-direction: column;
-}
+    .contact-section {
+        flex-direction: column;
+    }
 
-.contact-details, .contact-form {
-    max-width: 100%;
-    margin-right: 0;
-    margin-bottom: 20px;
-}
+    .contact-details,
+    .contact-form {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
 
 .social-links {
-    margin-top: 10px; 
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     gap: 15px;
 }
 
 .social-links a {
-    margin-right: 10px; 
-    display: inline-block; 
+    margin-right: 10px;
+    display: inline-block;
 }
 
 .special-item .social-links .social-icon {
-    width: 60px; 
+    width: 60px;
     height: 60px;
 }
 
 .social-icon:hover {
-    transform: scale(1.2); 
+    transform: scale(1.2);
 }
