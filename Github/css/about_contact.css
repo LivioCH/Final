@@ -39,21 +39,27 @@ h2 {
 }
 
 .special-item {
-    position: relative;
     cursor: pointer;
     width: 24%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-wrapper {
+    position: relative;
+    width: 100%;
     aspect-ratio: 1;
 }
 
-.special-item img {
+.img-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
 }
 
-.special-item .info {
+.img-wrapper .info {
     display: none;
     position: absolute;
     top: 0;
@@ -69,8 +75,31 @@ h2 {
     font-size: 20px;
 }
 
-.special-item:hover .info {
+.special-item:hover .img-wrapper .info {
     display: block;
+}
+
+.special-item .opinion {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease, margin-top 0.4s ease, padding 0.4s ease;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+.special-item:hover .opinion,
+.special-item.active .opinion {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .special {
@@ -89,6 +118,7 @@ h2 {
     flex-wrap: nowrap;
     gap: 20px;
     justify-content: center;
+    align-items: flex-start;
     margin-top: 20px;
 }
 
